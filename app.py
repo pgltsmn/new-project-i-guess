@@ -45,9 +45,11 @@ def signup():
   if request.method == 'POST':
     email = request.form['email']
     password = request.form['password']
+    name = request.form['name']
+    nickname = request.form['nickname']
     try:
       login_session['user'] = auth.create_user_with_email_and_password(email, password)
-      user = {'email': email, 'password': password}
+      user = {'email': email, 'password': password, 'name': name, 'nickname': nickname}
       db.child('Users').child(login_session['user']['localId']).set(user)
 
       return redirect(url_for('add_post'))
