@@ -1,9 +1,4 @@
-/**
-* Template Name: KnightOne - v4.8.1
-* Template URL: https://bootstrapmade.com/knight-simple-one-page-bootstrap-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 (function() {
   "use strict";
 

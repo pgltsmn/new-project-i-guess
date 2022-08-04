@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <a href="/signout"><button>signout</button></a>
+
+    <form method="post" action="/add_post">
+        <h3>Write a tweet!</h3>
+        <div>
+            <label>the title</label>
+            <input type="text" name="title" maxlength="30">
+        </div>
+        <div>
+            <label>text here</label>
+            <input type="text" name="tweet" maxlength="280">
+        </div>
+
+        <div>
+            <input type="submit"/>
+        </div>
+
+
+    </form>
+
+    <a href="/wall"><button>wall</button></a>
+
+</body>
+</html>
